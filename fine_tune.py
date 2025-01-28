@@ -11,5 +11,10 @@ from transformers import (
 )
 from peft import LoraConfig
 from trl import SFTTrainer
+from dotenv import load_dotenv
 
+load_dotenv()
 
+llama_access_token  = os.getenv("llama_access_token ")
+tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B", access_token = llama_access_token, cache_dir = "./models")
+model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3-8B", access_token = llama_access_token, cache_dir = "./models")
