@@ -1,2 +1,7 @@
 torch 
 torchtune
+bitsandbytes
+peft
+accelerate
+transformers 
+trl
