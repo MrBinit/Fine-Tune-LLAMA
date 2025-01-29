@@ -16,5 +16,5 @@ from dotenv import load_dotenv
 load_dotenv()
 
 llama_access_token  = os.getenv("llama_access_token ")
-tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B", access_token = llama_access_token, cache_dir = "./models")
-model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3-8B", access_token = llama_access_token, cache_dir = "./models")
+tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B",  cache_dir = "./models")
+model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3-8B", cache_dir = "./models")

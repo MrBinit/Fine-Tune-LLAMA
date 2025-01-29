@@ -6,3 +6,8 @@ accelerate
 transformers 
 trl
 python-dotenv
+mlabonne___guanaco-llama2-1k
+_home_binit_finetune_llama_mlabonne___guanaco-llama2-1k_default_0.0.0_27db19ecdc5fa7cd983280d1019ac2f1f96c96c1
+*.json
+*.arrow
+*.lock
